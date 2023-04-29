@@ -3,13 +3,13 @@
 Any spaces in your font name should be replaced with a +. 
 Fonts are separated by a & */
 @import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap&family=Sintony&display=swap,wght@0,400;0,700;1,400&display=swap');
-/* https://coolors.co/3781a2-e7c24f-a43312-381d2a-aabd8c*/
+/* https://coolors.co/3781a2-e7c24f-a43312-bcb8ff-aabd8c*/
 :root {
   /* change the values below to your colors from your palette */
   --primary-color: #144b85  ;
   --secondary-color: #1e81cc ;
   --accent1-color: #5a93aa;
-  --accent2-color: #381d2a;
+  --accent2-color: #bcb8ff;
    
   /* change the values below to your chosen font(s) */
   --heading-font: "Heebo";
