@@ -2,7 +2,7 @@
 /* if you are using any Google fonts change the font names below to your fonts. 
 Any spaces in your font name should be replaced with a +. 
 Fonts are separated by a & */
-@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap&family=Sintony&display=swap,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap&family=Sintony&display=swap,wght@0,400;0,700;1,400&display=swap');
 /* https://coolors.co/3781a2-e7c24f-a43312-381d2a-aabd8c*/
 :root {
   /* change the values below to your colors from your palette */
@@ -12,7 +12,7 @@ Fonts are separated by a & */
   --accent2-color: #381d2a;
    
   /* change the values below to your chosen font(s) */
-  --heading-font: "Carter One";
+  --heading-font: "Heebo";
   --paragraph-font: Sintony, Helvetica, sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
