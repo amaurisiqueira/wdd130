@@ -25,13 +25,13 @@ Fonts are separated by a & */
   --paragraph-color-on-white: #144b85; /* paragraph text on a white background */ 
   --paragraph-color-on-color: #d7eaee; /* paragraph text on a colored background */ 
   --paragraph-background-color: #144b85 ;
-  --nav-link-color: #144b85;
-  --nav-background-color: #98D5EC;
+  --nav-link-color: var(--primary-color); /* #144b85;*/
+  --nav-background-color: var(--accent1-color);
   --backgroud-color: #eff0f1;
 
 
-  --nav-hover-link-color: #c5e6ed;
-  --nav-hover-background-color: #1f919b;
+  --nav-hover-link-color: var( --secondary-color ) ; /* #c5e6ed; */
+  --nav-hover-background-color: var( --accent2-color ) ; /*#1f919b;*/
 }
 
 
