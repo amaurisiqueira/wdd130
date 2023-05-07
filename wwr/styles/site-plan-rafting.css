@@ -172,7 +172,7 @@ nav a:hover {
   border-right: 1px solid;
 }
 
-
+/*
 .img_about {
   filter:alpha(opacity=80);
   opacity: 0.90;
@@ -182,9 +182,10 @@ nav a:hover {
   margin-left: 40px;
   margin-top: 40px;
   border: 2px solid transparent;
-  shape-outside: circle(55%);
+ --  shape-outside: circle(55%); 
   
 }
+*/
 /*
 footer {
 
