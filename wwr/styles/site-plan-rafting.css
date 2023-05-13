@@ -27,8 +27,8 @@ Fonts are separated by a & */
   --paragraph-background-color: #144b85 ;
   --nav-link-color: var(--primary-color); /* #144b85;*/
   --nav-background-color: var(--accent1-color);
-  /* --backgroud-color: #eff0f1; */
-  --backgroud-color: red;
+   --backgroud-color: #eff0f1; 
+  /*--backgroud-color: red;*/
 
 
   --nav-hover-link-color: var( --secondary-color ) ; /* #c5e6ed; */
