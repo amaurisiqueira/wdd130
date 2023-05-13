@@ -27,7 +27,8 @@ Fonts are separated by a & */
   --paragraph-background-color: #144b85 ;
   --nav-link-color: var(--primary-color); /* #144b85;*/
   --nav-background-color: var(--accent1-color);
-  --backgroud-color: #eff0f1;
+  /* --backgroud-color: #eff0f1; */
+  --backgroud-color: red;
 
 
   --nav-hover-link-color: var( --secondary-color ) ; /* #c5e6ed; */
@@ -86,7 +87,7 @@ p {
   text-align: center;
 }
 .colors th {
-  background-color: #999;
+  background-color: var(--backgroud-color);
 }
 .colors td{
   width: 25%;
@@ -113,11 +114,12 @@ nav {
   line-height: 3em;
   text-align: center;
   font-size: 1.2em;
-}
+}/*
 nav  {
   list-style-type: none;
   display: flex;
-}
+  flex-direction: row;
+}*/
 nav a {
   padding:1em;
   min-width: 120px;
@@ -128,10 +130,12 @@ nav a {
 }
 nav a:link, nav a:visited {
   color: var(--nav-link-color);
+  text-decoration: none;
 }
 nav a:hover {
   color: var(--nav-hover-link-color);
   background-color: var(--nav-hover-background-color);
+  text-decoration: none;
 }
 .sitemap {
   display: grid;
@@ -149,17 +153,17 @@ nav a:hover {
 }
 .sm-home {
   grid-area: home;
-  background-color: #ccc;
+  background-color: var(--backgroud-color);
   line-height: 3em;
 }
 .sm-page2 {
   grid-area: page2;
-  background-color: #ccc;
+  background-color: var(--backgroud-color);
   line-height: 3em;
 }
 .sm-page3 {
   grid-area: page3;
-  background-color: #ccc;
+  background-color: var(--backgroud-color);
   line-height: 3em;
 }
 .top {
@@ -195,19 +199,23 @@ nav a:hover {
  
 #hero-msg h1 {
   text-align: center;
+  background-color: var(--backgroud-color);
 
 }
 #hero-msg h4 {
   text-align: center;
+  background-color: var(--backgroud-color);
 }
 
 #hero-img {
   width: 100%;
+  background-color: var(--backgroud-color);
 }
 
 
 .button-box {
   text-align: center;
+  background-color: var(--backgroud-color);
 }
 
 
@@ -270,25 +278,34 @@ footer a {
 }
 
 footer a:hover {
+  text-decoration: none;
   color: var(--nav-hover-link-color);
   background-color: var(--nav-hover-background-color);
 }
 
 footer p {
   font-size: 1.2em;
+  background-color: var(--backgroud-color);
 }    
 
 footer p a:hover {
   text-decoration: underline;
+  background-color: var(--nav-hover-background-color);
 }    
     
-
+.social a:hover {
+  text-decoration: underline;
+  background-color: var(--nav-hover-background-color);
+  opacity: .7;
+}
 .home-title {
   color: var(--paragraph-color-on-white);
 }
 
 .logo {
   width: 80px;
+  padding: 0px;
+  display: block;
 }
 .card-img {
   width: 79%;
