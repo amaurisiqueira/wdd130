@@ -45,11 +45,14 @@ body {
   text-align: center;
   background-color: var(--backgroud-color);
 }
+/*
+dont work 
 img {
   display: block;
   margin: 0 auto;
   max-width: 300px;
 }
+*/
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
   color: var(--headline-color-on-white);
