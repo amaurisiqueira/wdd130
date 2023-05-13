@@ -185,8 +185,9 @@ nav a:hover {
 
 #background {
   height: 725px;
+  background-color: var(--nav-hover-background-color)
 }
-
+ 
 #hero-msg h1 {
   text-align: center;
 
@@ -215,9 +216,7 @@ main section {
   color: var(--nav-hover-link-color);
   background-color: var(--nav-hover-background-color);
 }
-#background  {
-  background-color: var(--backgroud-color);
-}
+
 
 .msg  {
   color: var(--paragraph-color-on-white);
