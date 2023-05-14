@@ -210,6 +210,7 @@ nav a:hover {
 
 .button-box {
   text-align: center;
+  color: var(--paragraph-color-on-white);
   background-color: var(--backgroud-color);
 }
 
@@ -226,7 +227,7 @@ main section {
   flex-direction: column;
   align-items: center;*/
   text-align: center;
-
+ /* margin:0 auto;*/
   display: inline-block;
   vertical-align: middle ;
 /*  border: chocolate solid 2px ;*/
@@ -308,9 +309,10 @@ footer p a:hover {
 }
 .icon {
   width: 80px;
-  padding: 10px 0 0 0;
+  
 }
 
+ 
 
 /*
 .img_about {
