@@ -309,11 +309,13 @@ footer p a:hover {
 footer .social img {
 
   padding-top: 15px;
+  transition: transform 0.3s;
 }
 .social a:hover {
   text-decoration: underline;
   background-color: var(--nav-hover-background-color);
-  opacity: .7;
+  opacity: .4;
+  transform: scale(1.2);
 }
 .home-title {
     color: var(--paragraph-color-on-white);
