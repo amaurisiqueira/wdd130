@@ -235,7 +235,7 @@ nav a:hover {
   grid-row: 6/7;
   padding: 35px;
   width: 100%;
-  line-height: 1em;
+  line-height: 0.95em;
   box-shadow: 5px 5px 10px #6f7364;;
 }
  
