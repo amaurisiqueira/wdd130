@@ -179,10 +179,29 @@ nav a:hover {
   border-right: 1px solid;
 }
 
+.logo {
+  width: 80px;
+  padding: 0px;
+  display: block;
+  padding-top: 5px;
+}
+#logo_link {
+  padding-top: 5px;
+  justify-self: center;
+  align-self: center;
+}
 
 .logo_especias {
     border-radius: 50%;
     width: 150px;
+}
+.main-header {
+  display: grid;
+  grid-template-columns: 150px auto;
+  padding: 1em;
+  text-align: center;
+  color: var(--headline-color-on-color);
+  background-color: var(--paragraph-background-color);
 }
 
 .wireframes-images,
@@ -226,6 +245,16 @@ nav a:hover {
 }
 
 
+#img-contactus-without-box ,
+#img-contactus-in-box {
+  margin-bottom: 20px;
+  width: 100%;
+  display: block;
+  align-items: center;
+}
+
+ 
+/*  form contact us         */
 form {
   /* Center the form on the page */
   margin: 0 auto;
@@ -291,3 +320,19 @@ button {
      between the labels and their text fields */
   margin-left: 0.5em;
 }
+
+
+
+/*
+#######page detail###################################################
+*/
+.page-detail-img {
+  width: 100%;
+}
+
+/* 
+################## Main page ##################
+ */
+ .img_main_page {
+  width: 100%;
+ }
