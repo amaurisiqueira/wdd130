@@ -6,17 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us Especias</title>
-
-
-
 </head>
-
-
-
-
 <body>
 
-    <header>
+    <header class="main-header">
         <a  id="logo_link" href="index.html" >  
           <img  class="logo" src="img/logo_especias.jpeg" alt="Image of logo of Especias">
         </a>
@@ -26,7 +19,7 @@
           <a href="contactus.html">Contact Us</a>
           <a href="site-plan.html" target="_blank">Site Plan</a>
         </nav>
-    </header>
+  </header>
 
 
     <main>
@@ -42,27 +35,36 @@
         <img id="img-contactus-without-box" class="img-contactus" src="img/page3-products-without-box.jpeg" alt="Sample of products without box">
 
 
-            <form action="#" method="post">
-                <img id="img-contactus-in-box" class="img-contactus" src="img/page3-different-size-of-box.jpeg">
+            <form role="form" id="formulary_of_contact" aria-label="Send a message for Us" action="#" method="post">
+                <div class="div_form_contact">
+                   <img id="img-contactus-in-box" class="img-contactus" src="img/page3-different-size-of-box.jpeg">
+                </div>
+                 
+                <label class="label_form_contact" for="name"  id="label_name">Name:</label>
+                <input 
+                    class="text_form_contact" 
+                    placeholder="Please put your name"
+                    required="true"  
+                    type="text" 
+                    id="name"
+                    aria-autocomplete="none" 
+                    name="userName_form_contact">
+                 
 
-            <ul>
-                <li>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="userName">
-                </li>
-                <li>
-                <label for="mail">Email:</label>
-                <input type="email" id="mail" name="userEmail">
-                </li>
-                <li>
-                <label for="msg">Message:</label>
-                <textarea id="msg" name="userMessage"></textarea>
-                </li>
+               
+                <label class="label_form_contact"  for="mail" id="label_mail">Email:</label>
+                <input class="text_form_contact" placeholder="Please put your e-mail" required="true" type="email" id="mail" name="userEmail_form_contact">
+               
+                
+                
+                <label class="label_form_contact"  for="msg"   id="label_userMessage_form_contact" >Commentary or Question:</label>
+                <textarea   class="text_form_contact" required="true" placeholder="Please put your message"  id="msg" name="userMessage_form_contact"></textarea>
+                 
 
-                <li class="button">
-                    <button type="submit">Send your message</button>
-                </li>
-            </ul>
+                <div class="div_submit_form_contact">
+                    <button  id="submit_form_contact" type="submit">Submit</button>
+                </div>
+             
 
              
 
@@ -79,18 +81,24 @@
         const feedbackElement = document.getElementById('feedback');
         // get the form so we can read what was entered in it.
         const formElement = document.forms[0];
+        console.log(formElement);
         // add a 'listener' to wait for a submission of our form. When that happens run the code below.
         formElement.addEventListener('submit', function(e) {
             // stop the form from doing the default action.
             e.preventDefault();
             // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
-            feedbackElement.innerHTML = 'Hello '+ formElement.userName.value + 
-            '! Thank you for your message:' + formElement.userMessage.value +
-             ' sended from ' + formElement.userEmail.value+ '. We will get back with you as soon as possible!';
+            feedbackElement.innerHTML = 'Hello '+ formElement.userName_form_contact.value + 
+            '! Thank you for your message:' + formElement.userMessage_form_contact.value +
+             ' sended from ' + formElement.userEmail_form_contact.value+ '. We will get back with you as soon as possible!';
             // make the feedback element visible.
             feedbackElement.style.display = "block";
             // add a class to move everything down so our message doesn't cover it.
             document.body.classList.toggle('moveDown');
+            setTimeout(function(){
+              feedbackElement.style.display = "none";
+              formElement.reset();
+            },5000)
+
         });
     </script>
 

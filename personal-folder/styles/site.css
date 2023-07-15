@@ -249,83 +249,172 @@ nav a:hover {
 }
 
 
-#img-contactus-without-box ,
-#img-contactus-in-box {
+#img-contactus-without-box   {
   margin-bottom: 20px;
-  width: 100%;
+  width: 50%;
+  display: block;
+  /*align-items: center;*/
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+#img-contactus-in-box {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  width: 33%;
   display: block;
   align-items: center;
 }
 
  
-/*  form contact us         */
 form {
-  /* Center the form on the page */
-  margin: 0 auto;
-  width: 400px;
-  /* Form outline */
-  padding: 1em;
-  border: 1px solid #ccc;
-  border-radius: 1em;
+  display: grid;
+  grid-template-columns: 200px 2fr;
+  border: 2px black solid;
+  width: 70%;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+ 
+.div_form_contact {
+  grid-row: 1/2;
+  grid-column: 1/6;
+} 
+
+#label_name {
+  
+  grid-row: 2/3;
+  grid-column: 1/2;
+
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  align-content: start;
+  padding-left: 0px;
+  margin-left: 25px;
+
+  font-family:var(--heading-font);
+  font-size: 1em;
+  color: var(--headline-color-on-white);
+} 
+
+#name {
+
+  grid-row: 3/4;
+  grid-column: 1/6;
+  display: flex;
+  flex-direction: row;
+  margin-left: 25px;
+  margin-right: 25px;
+  font-family:var(--heading-font);
+  
+  font-size: 1.2em;
+  color: var(--headline-color-on-white);
+}
+ 
+#label_mail {
+  grid-row: 4/5;
+  grid-column: 1/2;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  align-content: start;
+  padding-left: 0px;
+  margin-left: 25px;
+  font-family:var(--heading-font);
+  font-size: 1em;
+  color: var(--headline-color-on-white);
+} 
+
+#mail {
+  grid-row: 5/6;
+  grid-column: 1/6;
+  display: flex;
+  flex-direction: row;
+  margin-left: 25px;
+  margin-right: 25px;
+  font-family:var(--heading-font);
+ 
+  font-size: 1.2em;
+  color: var(--headline-color-on-white);
 }
 
-form li + li {
-  margin-top: 1em;
+
+#label_userMessage_form_contact {
+  grid-row: 6/7;
+  grid-column: 1/6;
+  align-items: start;
+  align-content: start;
+  
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  align-content: start;
+  padding-left: 0px;
+  margin-left: 25px;
+  font-family:var(--heading-font);
+  font-size: 1em;
+  color: var(--headline-color-on-white);
+} 
+
+#msg {
+  height: 6em;
+  grid-row: 7/12;
+  grid-column: 1/6;
+  display: flex;
+  flex-direction: row;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 15px;
+  font-family:var(--heading-font);
+  font-size: 1.2em;
+ 
+  color: var(--headline-color-on-white);
 }
 
-label {
-  /* Uniform size & alignment */
-  display: inline-block;
-  width: 90px;
-  text-align: right;
+.div_submit_form_contact   {
+  grid-row: 13/14;
+  grid-column: 1/6;
+  margin-bottom: 15px;
+  font-family:var(--heading-font);
+   
+  color: var(--headline-color-on-white);
 }
 
-input,
-textarea {
-  /* To make sure that all text fields have the same font settings
-     By default, textareas have a monospace font */
-  font: 1em sans-serif;
+#submit_form_contact
+{
+ 
 
-  /* Uniform text field size */
-  width: 300px;
-  box-sizing: border-box;
+  
+  align-content: center;
+  
+  margin-top: 15px;
+  margin-bottom: 15px;
+ /* display: flex;*/
+  flex-direction: column;
+  align-items: start;
+  align-content: start;
+  padding-left: 0px;
+  margin-left: 15px;
+  font-family:var(--heading-font);
+  font-size: 1.5em;
+   
+  color: var(--headline-color-on-white);
+} 
+/*
+ 
+ 
+ 
+<div class="div_form_contact">
+ <button  name="submit_form_contact" type="submit">Send your message</button>
+</div>
 
-  /* Match form field borders */
-  border: 1px solid #999;
-}
-
-input:focus,
-textarea:focus {
-  /* Additional highlight for focused elements */
-  border-color: #000;
-}
-
-textarea {
-  /* Align multiline text fields with their labels */
-  vertical-align: top;
-
-  /* Provide space to type some text */
-  height: 5em;
-}
-
-.button {
-  /* Align buttons with the text fields */
-  padding-left: 90px; /* same size as the label elements */
-}
-
-button {
-  /* This extra margin represent roughly the same space as the space
-     between the labels and their text fields */
-  margin-left: 0.5em;
-}
-
-
+*/
 
 /*
 #######page detail###################################################
