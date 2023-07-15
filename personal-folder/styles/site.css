@@ -268,7 +268,7 @@ nav a:hover {
 }
 
  
-form {
+#formulary_of_contact {
   display: grid;
   grid-template-columns: 200px 2fr;
   border: 2px black solid;

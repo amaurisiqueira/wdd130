@@ -35,16 +35,16 @@
         <img id="img-contactus-without-box" class="img-contactus" src="img/page3-products-without-box.jpeg" alt="Sample of products without box">
 
 
-            <form role="form" id="formulary_of_contact" aria-label="Send a message for Us" action="#" method="post">
+            <form id="formulary_of_contact" aria-label="Send a message for Us" action="#" method="post">
                 <div class="div_form_contact">
                    <img id="img-contactus-in-box" class="img-contactus" src="img/page3-different-size-of-box.jpeg">
                 </div>
                  
                 <label class="label_form_contact" for="name"  id="label_name">Name:</label>
-                <input 
+                <input required
                     class="text_form_contact" 
                     placeholder="Please put your name"
-                    required="true"  
+                     
                     type="text" 
                     id="name"
                     aria-autocomplete="none" 
@@ -53,12 +53,12 @@
 
                
                 <label class="label_form_contact"  for="mail" id="label_mail">Email:</label>
-                <input class="text_form_contact" placeholder="Please put your e-mail" required="true" type="email" id="mail" name="userEmail_form_contact">
+                <input required class="text_form_contact" placeholder="Please put your e-mail"  type="email" id="mail" name="userEmail_form_contact">
                
                 
                 
                 <label class="label_form_contact"  for="msg"   id="label_userMessage_form_contact" >Commentary or Question:</label>
-                <textarea   class="text_form_contact" required="true" placeholder="Please put your message"  id="msg" name="userMessage_form_contact"></textarea>
+                <textarea required   class="text_form_contact"  placeholder="Please put your message"  id="msg" name="userMessage_form_contact"></textarea>
                  
 
                 <div class="div_submit_form_contact">
